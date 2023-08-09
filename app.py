@@ -3,10 +3,11 @@ import pickle
 import pandas as pd
 import numpy as np
 from numpy import ndarray
-import sklearn
 
 pipe = pickle.load(open('pipe.pkl', 'rb'))
 data = pd.read_pickle("df.pkl")
+
+# Changes are made in pickle file. If the pickle file gives error try changing the reading method of it.
 
 st.title("Laptop Predictor ")
 
